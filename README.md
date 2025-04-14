@@ -1,5 +1,28 @@
 # dl_binder_design
 
+## Installation
+```bash
+conda config --add channels https://conda.rosettacommons.org
+conda config --add channels conda-forge
+conda create -n proteinmpnn_binder_design python=3.9
+conda activate proteinmpnn_binder_design
+pip3 install torch torchvision torchaudio
+conda install pyrosetta
+cd mpnn_fr
+git clone git@github.com:PKUfjh/ProteinMPNN.git
+```
+
+## Run
+```bash
+# Run ProteinMPNN-Fastrelax to 
+cd examples
+./run_example_proteinmpnn_pdbdir.sh
+
+# Run AF2 initial guess to estimate PAE
+conda activate af2 # the same enviroment with MSA subsampling
+./run_example_af2_pdbdir.sh
+```
+
 This repo contains the scripts described in the paper [Improving de novo Protein Binder Design with Deep Learning](https://www.nature.com/articles/s41467-023-38328-5).
 
 ![forgithub](https://github.com/nrbennet/dl_binder_design/assets/56419265/4c5d6a05-d2fb-4c7b-b1e0-0c743b2114eb)

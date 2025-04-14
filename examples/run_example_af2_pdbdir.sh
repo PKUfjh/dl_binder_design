@@ -1,0 +1,1 @@
+../af2_initial_guess/predict.py -pdbdir ./example3_out -outpdbdir ./example3_af2
