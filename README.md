@@ -19,7 +19,10 @@ cd examples
 ./run_example_proteinmpnn_pdbdir.sh
 
 # Run AF2 initial guess to estimate PAE
-conda activate af2 # the same enviroment with MSA subsampling
+conda activate colab # the same enviroment with localcolabfold
+conda config --add channels https://conda.rosettacommons.org
+conda install pyrosetta
+pip install biopython==1.81
 ./run_example_af2_pdbdir.sh
 ```
 
