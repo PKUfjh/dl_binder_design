@@ -1,0 +1,1 @@
+../mpnn_fr/dl_interface_design.py -pdbdir tnfr_designs -relax_cycles 0 -seqs_per_struct 4 -outpdbdir tnfr_outs

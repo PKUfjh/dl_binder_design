@@ -1,0 +1,1 @@
+../af2_initial_guess/predict.py -pdbdir ./tnfr_outs_partial -outpdbdir ./tnfr_af2_partial
